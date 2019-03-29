@@ -23,7 +23,7 @@ module.exports = {
     '@nuxtjs/pwa'
   ],
   axios: {
-    baseURL: process.env.BASE_URL || 'https://nuxt-blog-77f0e.firebaseio.com'
+    baseURL: process.env.BASE_URL || 'https://vigorous-varahamihira-9a73e4.netlify.com'
   },
   css: [
     '~/assets/style/app.styl'
@@ -55,7 +55,7 @@ module.exports = {
     }
   },
   env: {
-    baseUrl: process.env.BASE_URL || 'https://nuxt-blog-77f0e.firebaseio.com',
+    baseUrl: process.env.BASE_URL || 'https://vigorous-varahamihira-9a73e4.netlify.com',
     fbAPIKey: 'AIzaSyDOyVZot9nyGEsDUSHO0Ml2IWKtVAyu9mA'
   },
   transition: {
@@ -68,7 +68,7 @@ module.exports = {
   ],
   generate: {
     routes: function () {
-      return axios.get('https://nuxt-blog-77f0e.firebaseio.com/posts.json')
+      return axios.get('https://vigorous-varahamihira-9a73e4.netlify.com/posts.json')
       .then(res => {
         const routes = []
         for (const key in res.data) {
